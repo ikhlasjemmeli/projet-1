@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Travel</title>
+
+</head>
+<body>
+    <header>
+        <img class="lo" src="images/logo.png" >
+        <div class="logo">
+            
+            <p><span>Tra</span>vel</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#menu">destination</a></li>
+            <li><a href="#about-us">A Propos</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+        </ul>
+        <div class="tog"></div>
+    </header>
+    <section id="home">
+        <div class="description">
+            <h4>Our New destination</h4>
+            <h1>New York</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptate quisquam ullam consequatur ab libero quaerat nesciunt deleniti asperiores quas itaque debitis. Aliquam ullam eos quod perferendis reprehenderit dolores vitae.</p>
+            <button><a href="#">reserver maintenant</a></button>
+        </div>
+        <div class="image">
+            <img src="images/téléchargement.jpg" >
+        </div>
+    </section>
+    <section id="menu">
+        <h4 class="mini-title">Nos destinations</h4>
+        <h2 class="title">les meilleurs prix</h2>
+        <div class="pays">
+            <div class="dish">
+                <img src="images/img1.jpg" >
+                <p>NewYork  </p>
+                <h2>$650.67</h2>
+                <a href="#">Reserver</a>
+            </div>
+            <div class="dish">
+                <img src="images/img2.jpg" >
+                <p>America</p>
+                <h2>$700</h2>
+                <a href="#">Reserver</a>
+            </div>
+            <div class="dish">
+                <img src="images/img3.jpg" >
+                <p>tunisia</p>
+                <h2>$300.89</h2>
+                <a href="#">Reserver</a>
+            </div>
+            <div class="dish">
+                <img src="images/img4.jpg" >
+                <p>Rome</p>
+                <h2>$456</h2>
+                <a href="#">Reserver</a>
+            </div>
+            <div class="dish">
+                <img src="images/New-York.jpg" >
+                <p>NewYork</p>
+                <h2>$678</h2>
+                <a href="#">Reserver</a>
+            </div>
+            <div class="dish">
+                <img src="images/images.jpg" >
+                <p>Qatar</p>
+                <h2>$590</h2>
+                <a href="#">Reserver</a>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <h4 class="mini-title">About Us</h4>
+        <h2 class="title">Why choose us ?</h2>
+        <div class="about">
+            <div class="description">
+                <img src="images/img5.jpg" >
+            </div>
+            <div class="image">
+                <h3>Best destination in the word</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci corrupti facere provident deserunt tempore? Autem quidem maiores ratione vel! Animi voluptatem commodi ipsum blanditiis alias cumque minima saepe, hic officia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis, quibusdam magni eaque facere eum maxime nemo molestiae praesentium? Aliquam minima suscipit placeat, illo numquam dolore magnam eius accusamus porro?</p>
+                 <button><a href="#">learn more</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="comment-section">
+        <h4 class="mini-title">Comments</h4>
+        <h2 class="title">What people this about us ?</h2>
+        <div class="comments">
+        <div class="comment">
+            <div>
+                <img src="images/img1.jpg" >
+                <h4>Smith johnson</h4>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique incidunt veritatis repellat dignissimos earum iure voluptates, ea ipsa tempore suscipit culpa dolores laboriosam beatae dicta! Mollitia magni itaque vitae ullam?</p>
+           
+        </div>
+        <div class="comment">
+            <div>
+                <img src="images/img2.JPG" >
+                <h4>peter john</h4>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique incidunt veritatis repellat dignissimos earum iure voluptates, ea ipsa tempore suscipit culpa dolores laboriosam beatae dicta! Mollitia magni itaque vitae ullam?</p>
+           
+        </div>
+        <div class="comment">
+            <div>
+                <img src="images/img3.jpg" >
+                <h4>amber harry</h4>
+           </div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique incidunt veritatis repellat dignissimos earum iure voluptates, ea ipsa tempore suscipit culpa dolores laboriosam beatae dicta! Mollitia magni itaque vitae ullam?</p>
+           
+        </div>
+    </div>
+    </section>
+    <section id="reservation">
+        <h4 class="mini-title">reservation</h4>
+        <h2 class="title">Fill this form to make a reservation</h2> 
+    
+    <form action="insert.php" method="POST" id="res">
+        <label for=""> Your Name</label>
+         <input type="text" id="name" name="name" >
+         <label for=""> Your Email</label>
+         <input type="email" id="email" name="email" >
+         <label for=""> Your Number</label>
+         <input type="tel" id="tel" name="number" >
+         <label for="">reservation date</label>
+         <input type="date" id="date" name="date" >
+         <input type="submit" value="Make the reservation" onclick="validation()" >
+    </form>
+</section>
+<footer>
+    <div class="services-list">
+        <div class="service">
+            <img src="images/clock.png" >
+            <h2>Ouverture</h2>
+            <p>10h30 à 23h45</p>
+            <p>23h45 à 09h30</p>
+        </div>
+        <div class="service">
+            <img src="images/pin.png" >
+            <h2>Adresses</h2>
+            <p>France-Paris</p>
+            <p>Bénin-cotonou</p>
+        </div>
+        <div class="service">
+            <img src="images/email.png" >
+            <h2>Emails</h2>
+            <p>email@gmail.com</p>
+            <p>travel@gmail.com</p>
+        </div>
+        <div class="service">
+            <img src="images/call.png" >
+            <h2>Numbers</h2>
+            <p>235454665</p>
+            <p>567878979</p>
+        </div>
+        <hr>
+    </div>
+    <p class="footer-text">Réalisé par <span>IKHLAS JEMMELI</span></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
